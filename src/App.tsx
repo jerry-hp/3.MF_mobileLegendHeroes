@@ -47,7 +47,7 @@ function App() {
             ) : FilteredCard.length === 0 ? (
               data.map((item: any, k: number) => (
                 <Box key={k} border="1px solid white" w={{ md: "31%", base: "49%" }} m="0 auto" bg="teal" boxSizing="border-box" p="10px" borderRadius="10px" position="relative">
-                  <Heading size="sm" textAlign="center" p="0 10px" bg="teal" borderRadius="5px" position="absolute" top="-10px" right="20px" border="1px solid white">
+                  <Heading size="sm" textAlign="center" p="5px 10px" bg="teal" borderRadius="5px" position="absolute" top="-15px" right="20px" border="1px solid white">
                     {item.hero_name}
                   </Heading>
                   <Text color="white">Role :</Text>
