@@ -41,13 +41,13 @@ function App() {
             search
           </Button>
 
-          <Box gridArea="card" display="flex" flexWrap="wrap" gap={{md:"1rem", base:"10px 0"}}>
+          <Box gridArea="card" display="flex" flexWrap="wrap" gap={{ md: "1rem", base: "10px 0" }}>
             {isLoading ? (
               <Spinner thickness="4px" speed="0.65s" emptyColor="gray.200" color="blue.500" size="xl" m="2rem auto" />
             ) : FilteredCard.length === 0 ? (
               data.map((item: any, k: number) => (
-                <Box key={k} border="1px solid white" w={{ md: "31%", base: "49%" }} m="0 auto" bg="teal" boxSizing="border-box" p="10px" borderRadius="10px">
-                  <Heading size="md" textAlign="center" color="facebook.900">
+                <Box key={k} border="1px solid white" w={{ md: "31%", base: "49%" }} m="0 auto" bg="teal" boxSizing="border-box" p="10px" borderRadius="10px" position="relative">
+                  <Heading size="sm" textAlign="center" p="0 10px" bg="teal" borderRadius="5px" position="absolute" top="-10px" right="20px" border="1px solid white">
                     {item.hero_name}
                   </Heading>
                   <Text color="white">Role :</Text>
@@ -62,7 +62,7 @@ function App() {
               ))
             ) : (
               FilteredCard.map((item: any, k: number) => (
-                <Box key={k} border="1px solid white" w="31%" m="0 auto" bg="teal" boxSizing="border-box" p="10px" borderRadius="10px">
+                <Box key={k} border="1px solid white" w={{ md: "31%", base: "49%" }} m="0 auto" bg="teal" boxSizing="border-box" p="10px" borderRadius="10px">
                   <Heading size="md" textAlign="center" color="facebook.900">
                     {item.hero_name}
                   </Heading>
