@@ -41,7 +41,7 @@ function App() {
             search
           </Button>
 
-          <Box gridArea="card" display="flex" flexWrap="wrap" gap={{ md: "1rem", base: "10px 0" }}>
+          <Box gridArea="card" display="flex" flexWrap="wrap" gap={{ md: "1rem", base: "10px 0" }} mt="1rem">
             {isLoading ? (
               <Spinner thickness="4px" speed="0.65s" emptyColor="gray.200" color="blue.500" size="xl" m="2rem auto" />
             ) : FilteredCard.length === 0 ? (
